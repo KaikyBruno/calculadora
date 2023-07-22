@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main class="fundo">
+        <div  id="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resp"></p>
+
+            <table>
+                <tr>
+                    <td><button class="button" onclick="reset ()">C</button></td>
+                    <td><button class="button" onclick="apagar ()"><</button></td>
+                    <td><button class="button" onclick="adiciona('/')">/</button></td>
+                    <td><button class="button" onclick="adiciona('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="adiciona ('7')">7</button></td>
+                    <td><button class="button" onclick="adiciona ('8')">8</button></td>
+                    <td><button class="button" onclick="adiciona('9')">9</button></td>
+                    <td><button class="button" onclick="adiciona('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="adiciona('4')">4</button></td>
+                    <td><button class="button" onclick="adiciona('5')">5</button></td>
+                    <td><button class="button" onclick="adiciona('6')">6</button></td>
+                    <td><button class="button" onclick="adiciona('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td> <button class="button" onclick="adiciona('1')">1</button></td>
+                    <td><button class="button" onclick="adiciona('2')">2</button></td>
+                    <td><button class="button" onclick="adiciona('3')">3</button></td>
+                    <td rowspan="2"><button class="button" style="height: 101px;" onclick="calcular ()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="button" style="width: 102px;" onclick="adiciona('0')">0</button></td>
+                    <td><button class="button" onclick="adiciona('.')">.</button></td>
+                    
+                </tr>
+            </table>
+        </div>
+
+    </main>
+
+
+    <script src="code/script.js"></script>
+
+</body>
+</html>
