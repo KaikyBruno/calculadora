@@ -35,7 +35,7 @@ html, body {
 }
 #calculadora > p {
     background-color: white;
-    width: 93%;
+    width: 200px;
     height: 30px;
     margin: auto;
     margin-top: 20px;
@@ -45,6 +45,7 @@ html, body {
     font-size: 1.4em;
     text-align: right;
     padding: 5px;
+    overflow: hidden ;
 }
 .button {
     background-color: transparent;
